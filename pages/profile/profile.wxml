@@ -1,0 +1,11 @@
+<!--pages/profile/profile.wxml-->
+<!--数据绑定 使用双大括号语法 与VUE类似 mustache-->
+<text>Hello {{name}}\n</text>
+<text>My age {{age}}</text>
+<!--列表展示-->
+<view wx:for='{{students}}'>{{item.name}}-{{item.age}}</view>
+
+<!--事件监听-->
+<view>counter:{{counter}}</view>
+<button size='mini' bindtap="pageClickAdd">+</button>
+<button size="mini" bindtap="pageClickSub">-</button>
